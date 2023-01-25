@@ -5,8 +5,10 @@ default_section = "THIRDPARTY"
 src_paths = ["src"]
 line_length = 120
 honor_noqa = true
+known_django = "django"
 known_first_party = "polytrip"
 remove_redundant_aliases = true
+sections = "FUTURE,STDLIB,DJANGO,THIRDPARTY,FIRSTPARTY,LOCALFOLDER"
 
 [tool.black]
 line-length = 120

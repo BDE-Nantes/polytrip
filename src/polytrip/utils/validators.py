@@ -1,13 +1,14 @@
 import fnmatch
-from typing import Callable, Optional, Union
 from collections.abc import Iterable
+from typing import Callable, Optional, Union
 
-import magic
 from django.core.exceptions import ValidationError
 from django.db.models.fields.files import ImageFieldFile
 from django.template.defaultfilters import filesizeformat
 from django.utils.deconstruct import deconstructible
 from django.utils.translation import gettext_lazy as _
+
+import magic
 
 
 @deconstructible
