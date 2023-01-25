@@ -4,12 +4,12 @@ polytrip
 
 :Version: 0.1.0
 :Source: https://github.com/BDE-Nantes/polytrip
-:Keywords: Polytech,BDE
+:Keywords: Polytrip,BDE
 :PythonVersion: 3.9
 
 |python-versions| |build-status| |coverage| |black|
 
-Django backend of the BDE application.
+Django backend of the Polytrip application.
 
 Documentation
 =============
