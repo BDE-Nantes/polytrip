@@ -17,7 +17,7 @@ Documentation
 See ``INSTALL.rst`` for installation instructions, available settings and
 commands.
 
-.. |coverage| image:: https://codecov.io/gh/BDE-Nantes/polytrip/branch/main/graph/badge.svg?token=JOL45K1JGY
+.. |coverage| image:: https://codecov.io/gh/BDE-Nantes/polytrip/branch/main/graph/badge.svg?token=YYB7T6HIP7
     :alt: Coverage
  :target: https://codecov.io/gh/BDE-Nantes/polytrip
 
@@ -31,6 +31,6 @@ commands.
     :alt: Supported Python version
 
 
-.. |build-status| image:: https://github.com/bde-nantes/polytrip/workflows/ci/badge.svg?branch=master
+.. |build-status| image:: https://github.com/bde-nantes/polytrip/workflows/ci/badge.svg?branch=main
     :alt: Build status
     :target: https://github.com/bde-nantes/polytrip/actions?query=workflow%3Aci

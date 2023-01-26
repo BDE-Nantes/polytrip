@@ -20,7 +20,7 @@ You need the following libraries and/or programs:
 
 * `Python`_ 3.9 or above
 * Python `Virtualenv`_ and `Pip`_
-* `PostgreSQL`_ 11 or above (14 recommended)
+* `PostgreSQL`_ 11 or above (14 recommended) with PostGIS.
 * If using Windows, you will need DDLs for libmagic. See `Installation instructions <https://github.com/ahupp/python-magic#windows>_`
 
 .. _Python: https://www.python.org/
@@ -58,6 +58,8 @@ development machine.
 
         $ sudo -u postgres createuser --interactive --pwprompt
         $ sudo -u postgres createdb -O polytrip polytrip
+        $ sudo -u postgres psql -d polytrip
+        $ CREATE EXTENSION postgis;
 
 5. Collect statics and create the initial database tables:
 

@@ -46,7 +46,7 @@ USE_THOUSAND_SEPARATOR = True
 #
 DATABASES = {
     "default": {
-        "ENGINE": config("DB_ENGINE", "django.db.backends.postgresql"),
+        "ENGINE": config("DB_ENGINE", "django.contrib.gis.db.backends.postgis"),
         "NAME": config("DB_NAME", "polytrip"),
         "USER": config("DB_USER", "polytrip"),
         "PASSWORD": config("DB_PASSWORD", "polytrip"),
@@ -67,6 +67,7 @@ INSTALLED_APPS = [
     "django.contrib.auth",
     "django.contrib.contenttypes",
     "django.contrib.sessions",
+    "django.contrib.gis",
     # NOTE: If enabled, at least one Site object is required and
     # uncomment SITE_ID above.
     # 'django.contrib.sites',
@@ -80,9 +81,12 @@ INSTALLED_APPS = [
     "axes",
     "rosetta",
     "solo",
+    "colorfield",
     # Project applications.
     "polytrip.utils",
     "polytrip.accounts",
+    "polytrip.schools",
+    "polytrip.trips",
 ]
 
 MIDDLEWARE = [
