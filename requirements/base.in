@@ -10,6 +10,7 @@ django-axes==5.40.1
 django-rosetta==0.9.8
 django-cleanup==6.0.0
 django-solo==2.0.0
+django-colorfield==0.8.0
 
 # API libraries
 # djangorestframework

@@ -1,0 +1,146 @@
+[
+    {
+        "model": "schools.School",
+        "pk": 1,
+        "fields": {
+            "name": "Polytech Angers",
+            "color": "#F0876F",
+            "coordinates": "SRID=4326;POINT (-0.5942667 47.4805249)"
+        }
+    },
+    {
+        "model": "schools.School",
+        "pk": 2,
+        "fields": {
+            "name": "Polytech Annecy-Chambéry",
+            "color": "#E6007E",
+            "coordinates": "SRID=4326;POINT (5.8707876 45.6402520)"
+        }
+    },
+    {
+        "model": "schools.School",
+        "pk": 3,
+        "fields": {
+            "name": "Polytech Clermont",
+            "color": "#86BC24",
+            "coordinates": "SRID=4326;POINT (3.1070366 45.7608068)"
+        }
+    },
+    {
+        "model": "schools.School",
+        "pk": 4,
+        "fields": {
+            "name": "Polytech Grenoble",
+            "color": "#BF9C71",
+            "coordinates": "SRID=4326;POINT (5.7500643 45.1846194)"
+        }
+    },
+    {
+        "model": "schools.School",
+        "pk": 5,
+        "fields": {
+            "name": "Polytech Lille",
+            "color": "#E4022E",
+            "coordinates": "SRID=4326;POINT (3.1348191 50.6078428)"
+        }
+    },
+    {
+        "model": "schools.School",
+        "pk": 6,
+        "fields": {
+            "name": "Polytech Lyon",
+            "color": "#781C00",
+            "coordinates": "SRID=4326;POINT (4.8661541 45.7791714)"
+        }
+    },
+    {
+        "model": "schools.School",
+        "pk": 7,
+        "fields": {
+            "name": "Polytech Marseille",
+            "color": "#009CB4",
+            "coordinates": "SRID=4326;POINT (5.4344829 43.345301)"
+        }
+    },
+    {
+        "model": "schools.School",
+        "pk": 8,
+        "fields": {
+            "name": "Polytech Montpellier",
+            "color": "#2581C4",
+            "coordinates": "SRID=4326;POINT (3.8604066 43.6327472)"
+        }
+    },
+    {
+        "model": "schools.School",
+        "pk": 9,
+        "fields": {
+            "name": "Polytech Nancy",
+            "color": "#E63023",
+            "coordinates": "SRID=4326;POINT (6.1861262 48.6597406)"
+        }
+    },
+    {
+        "model": "schools.School",
+        "pk": 10,
+        "fields": {
+            "name": "Polytech Nantes",
+            "color": "#FFDD00",
+            "coordinates": "SRID=4326;POINT (-1.5180526 47.2819356)"
+        }
+    },
+    {
+        "model": "schools.School",
+        "pk": 11,
+        "fields": {
+            "name": "Polytech Nantes - Gavy",
+            "color": "#FFDD00",
+            "coordinates": "SRID=4326;POINT (-2.2596428 47.2529014)"
+        }
+    },
+    {
+        "model": "schools.School",
+        "pk": 12,
+        "fields": {
+            "name": "Polytech Nice Sophia",
+            "color": "#C7D301",
+            "coordinates": "SRID=4326;POINT (7.0695895 43.615556)"
+        }
+    },
+    {
+        "model": "schools.School",
+        "pk": 13,
+        "fields": {
+            "name": "Polytech Orléans",
+            "color": "#F39200",
+            "coordinates": "SRID=4326;POINT (1.9257769 47.8427652)"
+        }
+    },
+    {
+        "model": "schools.School",
+        "pk": 14,
+        "fields": {
+            "name": "Polytech Paris-Saclay",
+            "color": "#A4A2B4",
+            "coordinates": "SRID=4326;POINT (2.1690434 48.7090259)"
+        }
+    },
+    {
+        "model": "schools.School",
+        "pk": 15,
+        "fields": {
+            "name": "Polytech Sorbonne",
+            "color": "#CABEBA",
+            "coordinates": "SRID=4326;POINT (2.3555977 48.8462559)"
+        }
+    },
+    {
+        "model": "schools.School",
+        "pk": 16,
+        "fields": {
+            "name": "Polytech Tours",
+            "color": "#A84D97",
+            "coordinates": "SRID=4326;POINT (0.6826594 47.3648665)"
+        }
+    }
+]

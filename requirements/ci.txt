@@ -38,6 +38,10 @@ django-cleanup==6.0.0
     # via
     #   -c requirements/base.txt
     #   -r requirements/base.txt
+django-colorfield==0.8.0
+    # via
+    #   -c requirements/base.txt
+    #   -r requirements/base.txt
 django-ipware==4.0.2
     # via
     #   -c requirements/base.txt
@@ -64,6 +68,11 @@ idna==3.4
     #   -c requirements/base.txt
     #   -r requirements/base.txt
     #   requests
+pillow==9.4.0
+    # via
+    #   -c requirements/base.txt
+    #   -r requirements/base.txt
+    #   django-colorfield
 polib==1.1.1
     # via
     #   -c requirements/base.txt

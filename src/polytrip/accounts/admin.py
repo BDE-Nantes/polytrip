@@ -8,11 +8,7 @@ from .models import User
 @admin.register(User)
 class UserAdmin(BaseUserAdmin):
     fieldsets = (
-        (None, {"fields": ("username", "password")}),
-        (
-            _("Personal info"),
-            {"fields": ("first_name", "last_name", "email")},
-        ),
+        (None, {"fields": ("username", "password", "is_team", "school")}),
         (
             _("Permissions"),
             {

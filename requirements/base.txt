@@ -20,6 +20,8 @@ django-axes==5.40.1
     # via -r requirements/base.in
 django-cleanup==6.0.0
     # via -r requirements/base.in
+django-colorfield==0.8.0
+    # via -r requirements/base.in
 django-ipware==4.0.2
     # via django-axes
 django-rosetta==0.9.8
@@ -28,6 +30,8 @@ django-solo==2.0.0
     # via -r requirements/base.in
 idna==3.4
     # via requests
+pillow==9.4.0
+    # via django-colorfield
 polib==1.1.1
     # via django-rosetta
 psycopg2==2.9.5
