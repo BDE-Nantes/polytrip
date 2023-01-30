@@ -82,11 +82,15 @@ INSTALLED_APPS = [
     "rosetta",
     "solo",
     "colorfield",
+    "rest_framework",
+    "rest_framework.authtoken",
+    "rest_framework_gis",
     # Project applications.
     "polytrip.utils",
     "polytrip.accounts",
     "polytrip.schools",
     "polytrip.trips",
+    "polytrip.api",
 ]
 
 MIDDLEWARE = [
@@ -362,6 +366,16 @@ IPWARE_META_PRECEDENCE_ORDER = (
     "HTTP_VIA",
     "REMOTE_ADDR",
 )
+
+#
+# DRF
+#
+REST_FRAMEWORK = {
+    "DEFAULT_AUTHENTICATION_CLASSES": [
+        "rest_framework.authentication.SessionAuthentication",
+        "rest_framework.authentication.TokenAuthentication",
+    ]
+}
 
 
 ########################
