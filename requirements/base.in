@@ -13,7 +13,8 @@ django-solo==2.0.0
 django-colorfield==0.8.0
 
 # API libraries
-# djangorestframework
+djangorestframework==3.14.0
+djangorestframework-gis==1.0.0
 # django-extra-fields
 # django-filter
 # drf-yasg  # api documentation
