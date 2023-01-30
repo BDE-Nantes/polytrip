@@ -10,6 +10,10 @@ class Trip(models.Model):
     team = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, limit_choices_to={"is_team": True})
     trip = models.LineStringField(_("Trip"), geography=True)
 
+    @property
+    def distance(self):
+        return self.trip.transform(3035, clone=True).length
+
     class Meta:
         ordering = ["team"]
         verbose_name = _("Trip")
