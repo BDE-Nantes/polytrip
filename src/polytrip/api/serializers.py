@@ -17,5 +17,6 @@ class TripSerializer(serializers.ModelSerializer):
             "team",
             "school",
             "trip",
+            "distance",
         ]
-        read_only_fields = ["uuid", "team", "school"]
+        read_only_fields = ["uuid", "team", "school", "distance"]
