@@ -9,12 +9,12 @@ asgiref==3.6.0
     #   -c requirements/ci.txt
     #   -r requirements/ci.txt
     #   django
-beautifulsoup4==4.11.1
+beautifulsoup4==4.11.2
     # via
     #   -c requirements/ci.txt
     #   -r requirements/ci.txt
     #   webtest
-black[colorama]==22.12.0
+black[colorama]==23.1.0
     # via -r requirements/dev.in
 build==0.10.0
     # via pip-tools
@@ -113,7 +113,9 @@ isort[colors]==5.11.4
 mypy-extensions==0.4.3
     # via black
 packaging==23.0
-    # via build
+    # via
+    #   black
+    #   build
 pathspec==0.11.0
     # via black
 pillow==9.4.0
@@ -121,8 +123,6 @@ pillow==9.4.0
     #   -c requirements/ci.txt
     #   -r requirements/ci.txt
     #   django-colorfield
-pip==22.3.1
-    # via pip-tools
 pip-tools==6.12.1
     # via -r requirements/dev.in
 platformdirs==2.6.2
@@ -172,12 +172,6 @@ responses==0.22.0
     # via
     #   -c requirements/ci.txt
     #   -r requirements/ci.txt
-setuptools==67.0.0
-    # via
-    #   -c requirements/ci.txt
-    #   -r requirements/ci.txt
-    #   django-axes
-    #   pip-tools
 six==1.16.0
     # via
     #   -c requirements/ci.txt
@@ -237,3 +231,13 @@ webtest==3.0.0
     #   django-webtest
 wheel==0.38.4
     # via pip-tools
+
+# The following packages are considered to be unsafe in a requirements file:
+pip==23.0
+    # via pip-tools
+setuptools==67.0.0
+    # via
+    #   -c requirements/ci.txt
+    #   -r requirements/ci.txt
+    #   django-axes
+    #   pip-tools

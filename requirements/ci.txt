@@ -9,7 +9,7 @@ asgiref==3.6.0
     #   -c requirements/base.txt
     #   -r requirements/base.txt
     #   django
-beautifulsoup4==4.11.1
+beautifulsoup4==4.11.2
     # via webtest
 certifi==2022.12.7
     # via
@@ -122,11 +122,6 @@ requests==2.28.2
     #   responses
 responses==0.22.0
     # via -r requirements/test-tools.in
-setuptools==67.0.0
-    # via
-    #   -c requirements/base.txt
-    #   -r requirements/base.txt
-    #   django-axes
 six==1.16.0
     # via python-dateutil
 soupsieve==2.3.2.post1
@@ -156,3 +151,10 @@ webob==1.8.7
     # via webtest
 webtest==3.0.0
     # via django-webtest
+
+# The following packages are considered to be unsafe in a requirements file:
+setuptools==67.0.0
+    # via
+    #   -c requirements/base.txt
+    #   -r requirements/base.txt
+    #   django-axes
