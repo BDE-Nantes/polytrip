@@ -14,6 +14,7 @@ django==3.2.16
     # via
     #   -r requirements/base.in
     #   django-axes
+    #   django-cors-headers
     #   django-rosetta
     #   django-solo
     #   djangorestframework
@@ -22,6 +23,8 @@ django-axes==5.40.1
 django-cleanup==6.0.0
     # via -r requirements/base.in
 django-colorfield==0.8.0
+    # via -r requirements/base.in
+django-cors-headers==3.13.0
     # via -r requirements/base.in
 django-ipware==4.0.2
     # via django-axes
@@ -63,5 +66,5 @@ uwsgi==2.0.21
     # via -r requirements/base.in
 
 # The following packages are considered to be unsafe in a requirements file:
-setuptools==67.0.0
+setuptools==67.1.0
     # via django-axes
