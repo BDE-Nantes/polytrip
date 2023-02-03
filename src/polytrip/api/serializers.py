@@ -1,6 +1,18 @@
 from rest_framework import serializers
 
+from polytrip.schools.models import School
 from polytrip.trips.models import Trip
+
+
+class SchoolSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = School
+        fields = [
+            "uuid",
+            "name",
+            "color",
+            "coordinates",
+        ]
 
 
 class TripSerializer(serializers.ModelSerializer):
