@@ -3,12 +3,13 @@ from django.urls import path
 from rest_framework import routers
 from rest_framework.authtoken import views
 
-from polytrip.api.views import TripViewSet
+from polytrip.api.views import SchoolViewSet, TripViewSet
 
 app_name = "api"
 
 router = routers.DefaultRouter()
 router.register("trips", TripViewSet, basename="trip")
+router.register("schools", SchoolViewSet, basename="school")
 
 urlpatterns = router.urls
 

@@ -73,6 +73,12 @@ CACHES = {
 
 INTERNAL_IPS = ("127.0.0.1",)
 
+#
+# CORS headers
+#
+
+CORS_ALLOW_ALL_ORIGINS = True
+
 
 # Override settings with local settings.
 try:
