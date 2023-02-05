@@ -91,6 +91,7 @@ INSTALLED_APPS = [
     "polytrip.accounts",
     "polytrip.schools",
     "polytrip.trips",
+    "polytrip.siteconfig",
     "polytrip.api",
 ]
 

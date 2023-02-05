@@ -1,6 +1,7 @@
 from rest_framework import serializers
 
 from polytrip.schools.models import School
+from polytrip.siteconfig.models import SiteConfiguration
 from polytrip.trips.models import Trip
 
 
@@ -32,3 +33,9 @@ class TripSerializer(serializers.ModelSerializer):
             "distance",
         ]
         read_only_fields = ["uuid", "team", "school", "distance"]
+
+
+class SiteConfigurationSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = SiteConfiguration
+        fields = ["start_date"]
