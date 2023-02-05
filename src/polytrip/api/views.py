@@ -1,10 +1,12 @@
-from rest_framework import mixins, permissions, viewsets
+from rest_framework import mixins, permissions, status, viewsets
+from rest_framework.response import Response
 
 from polytrip.schools.models import School
+from polytrip.siteconfig.models import SiteConfiguration
 from polytrip.trips.models import Trip
 
 from .permissions import IsTripOwnerOrReadOnly
-from .serializers import SchoolSerializer, TripSerializer
+from .serializers import SchoolSerializer, SiteConfigurationSerializer, TripSerializer
 
 
 class SchoolViewSet(viewsets.ReadOnlyModelViewSet):
@@ -18,3 +20,16 @@ class TripViewSet(mixins.UpdateModelMixin, viewsets.ReadOnlyModelViewSet):
     queryset = Trip.objects.all()
     serializer_class = TripSerializer
     permission_classes = [permissions.IsAuthenticatedOrReadOnly, IsTripOwnerOrReadOnly]
+
+
+class SiteConfigurationViewSet(viewsets.ReadOnlyModelViewSet):
+    queryset = SiteConfiguration.objects.all()
+    serializer_class = SiteConfigurationSerializer
+
+    def retrieve(self, requests, *args, **kwargs):
+        return Response(status=status.HTTP_405_METHOD_NOT_ALLOWED)
+
+    def list(self, requests, *args, **kwargs):
+        instance = self.get_queryset().first()
+        serializer = self.get_serializer(instance)
+        return Response(serializer.data)
