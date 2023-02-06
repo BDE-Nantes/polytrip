@@ -5,7 +5,7 @@ from polytrip.schools.models import School
 from polytrip.siteconfig.models import SiteConfiguration
 from polytrip.trips.models import Trip
 
-from .permissions import IsTripOwnerOrReadOnly
+from .permissions import EventOpened, IsTripOwnerOrReadOnly
 from .serializers import SchoolSerializer, SiteConfigurationSerializer, TripSerializer
 
 
@@ -19,7 +19,7 @@ class TripViewSet(mixins.UpdateModelMixin, viewsets.ReadOnlyModelViewSet):
     lookup_field = "uuid"
     queryset = Trip.objects.all()
     serializer_class = TripSerializer
-    permission_classes = [permissions.IsAuthenticatedOrReadOnly, IsTripOwnerOrReadOnly]
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly, EventOpened, IsTripOwnerOrReadOnly]
 
 
 class SiteConfigurationViewSet(viewsets.ReadOnlyModelViewSet):

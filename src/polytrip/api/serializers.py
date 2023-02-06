@@ -38,4 +38,4 @@ class TripSerializer(serializers.ModelSerializer):
 class SiteConfigurationSerializer(serializers.ModelSerializer):
     class Meta:
         model = SiteConfiguration
-        fields = ["start_date"]
+        fields = ["start_date", "end_date"]

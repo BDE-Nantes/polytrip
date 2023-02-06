@@ -1,10 +1,15 @@
+from datetime import datetime
+
 from django.urls import reverse
 
+import pytz
+from freezegun import freeze_time
 from rest_framework import status
 from rest_framework.test import APITestCase
 
 from polytrip.accounts.tests.factories import UserFactory
 from polytrip.schools.models import School
+from polytrip.siteconfig.models import SiteConfiguration
 
 
 class APITestsTrip(APITestCase):
@@ -73,3 +78,26 @@ class APITestsTrip(APITestCase):
             status.HTTP_400_BAD_REQUEST,
             "The server shouldn't accept coordinates of only one point.",
         )
+
+    def update_forbidden_if_event_not_active(self):
+        site_configuration = SiteConfiguration.get_solo()
+        site_configuration.start_date = datetime(2023, 1, 3, tzinfo=pytz.utc)
+        site_configuration.end_date = datetime(2023, 1, 5, tzinfo=pytz.utc)
+        site_configuration.save()
+
+        school = School.objects.first()
+        team_1 = UserFactory(is_team=True, school=school)
+
+        self.client.force_authenticate(team_1)
+        patch_resp = self.client.patch(
+            reverse("api:trip-detail", kwargs={"uuid": team_1.trip.uuid}), data={}, format="json"
+        )
+        self.assertEqual(patch_resp.status_code, status.HTTP_403_FORBIDDEN)
+
+    @freeze_time("2023-01-02")
+    def test_update_forbidden_if_event_not_started(self):
+        self.update_forbidden_if_event_not_active()
+
+    @freeze_time("2023-01-06")
+    def test_update_forbidden_if_event_ended(self):
+        self.update_forbidden_if_event_not_active()
