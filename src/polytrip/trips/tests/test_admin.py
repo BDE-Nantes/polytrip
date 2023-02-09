@@ -16,3 +16,4 @@ class TripAdminTest(TestCase):
         trip.save()
         ta = TripAdmin(Trip, AdminSite())
         self.assertAlmostEqual(ta.get_distance(trip), 1555.3, places=1)
+        self.assertEqual(ta.get_school(trip), trip.team.school)
