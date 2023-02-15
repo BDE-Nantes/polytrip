@@ -3,7 +3,7 @@ from django.urls import path
 from rest_framework import routers
 from rest_framework.authtoken import views
 
-from polytrip.api.views import SchoolViewSet, SiteConfigurationViewSet, TripViewSet
+from polytrip.api.views import SchoolViewSet, SiteConfigurationViewSet, TripViewSet, UserInfoView
 
 app_name = "api"
 
@@ -14,4 +14,4 @@ router.register("siteconfiguration", SiteConfigurationViewSet, basename="sitecon
 
 urlpatterns = router.urls
 
-urlpatterns += [path("token-auth/", views.obtain_auth_token)]
+urlpatterns += [path("token-auth/", views.obtain_auth_token), path("users/me/", UserInfoView.as_view())]
