@@ -43,6 +43,7 @@ class UserInfoView(views.APIView):
         school = request.user.school
         if school is not None:
             data["school_name"] = school.name
+            data["school_color"] = school.color
         trip = getattr(request.user, "trip", None)
         if trip is not None:
             data["trip"] = TripSerializer(trip).data
