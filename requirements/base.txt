@@ -20,11 +20,11 @@ django==3.2.16
     #   djangorestframework
 django-axes==5.40.1
     # via -r requirements/base.in
-django-cleanup==6.0.0
+django-cleanup==7.0.0
     # via -r requirements/base.in
 django-colorfield==0.8.0
     # via -r requirements/base.in
-django-cors-headers==3.13.0
+django-cors-headers==3.14.0
     # via -r requirements/base.in
 django-ipware==4.0.2
     # via django-axes
@@ -42,13 +42,13 @@ idna==3.4
     # via requests
 pillow==9.4.0
     # via django-colorfield
-polib==1.1.1
+polib==1.2.0
     # via django-rosetta
 psycopg2==2.9.5
     # via -r requirements/base.in
-python-decouple==3.7
+python-decouple==3.8
     # via -r requirements/base.in
-python-dotenv==0.21.1
+python-dotenv==1.0.0
     # via -r requirements/base.in
 python-magic==0.4.27
     # via -r requirements/base.in
@@ -66,5 +66,5 @@ uwsgi==2.0.21
     # via -r requirements/base.in
 
 # The following packages are considered to be unsafe in a requirements file:
-setuptools==67.1.0
+setuptools==67.4.0
     # via django-axes

@@ -8,5 +8,5 @@ def create_trip(sender, **kwargs):
     if instance.is_team and instance.school is not None:
         school_point = instance.school.coordinates
         Trip.objects.get_or_create(
-            team=instance, defaults={"trip": LineString(school_point, (school_point.x + 0.01, school_point.y))}
+            team=instance, defaults={"trip": LineString(school_point, (school_point.x + 0.001, school_point.y))}
         )

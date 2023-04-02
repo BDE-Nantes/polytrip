@@ -1,17 +1,17 @@
 # Core python libraries
 psycopg2==2.9.5  # database driver
-python-dotenv==0.21.1  # environment variables for secrets
-python-decouple==3.7  # processing of envvar configs
+python-dotenv==1.0.0  # environment variables for secrets
+python-decouple==3.8  # processing of envvar configs
 python-magic==0.4.27
 
 # Framework libraries
 django==3.2.16
 django-axes==5.40.1
 django-rosetta==0.9.8
-django-cleanup==6.0.0
+django-cleanup==7.0.0
 django-solo==2.0.0
 django-colorfield==0.8.0
-django-cors-headers==3.13.0
+django-cors-headers==3.14.0
 
 # API libraries
 djangorestframework==3.14.0

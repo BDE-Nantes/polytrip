@@ -1,9 +1,9 @@
 -c ci.txt
 
 # Helpers
-pip-tools==6.12.1
-gitpython==3.1.30
+pip-tools==6.12.3
+gitpython==3.1.31
 
 # Code formatting
 black[colorama]==23.1.0
-isort[colors]==5.11.4
+isort[colors]==5.12.0

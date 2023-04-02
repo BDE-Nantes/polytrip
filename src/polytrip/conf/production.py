@@ -11,6 +11,8 @@ os.environ.setdefault("CACHE_DEFAULT", "127.0.0.1:6379/2")
 
 from .base import *  # noqa isort:skip
 
+LANGUAGE_CODE = "en-us"
+
 # Database performance
 for db_config in DATABASES.values():
     db_config["CONN_MAX_AGE"] = 60  # Lifetime of a database connection for performance.
@@ -43,26 +45,9 @@ LOGGING["loggers"].update(
 )
 
 # Only set this when we're behind a reverse proxy
-SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
+# SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
 SECURE_CONTENT_TYPE_NOSNIFF = True  # Sets X-Content-Type-Options: nosniff
-SECURE_BROWSER_XSS_FILTER = True  # Sets X-XSS-Protection: 1; mode=block
 
-#
-# Custom settings overrides
-#
-SHOW_ALERT = False
-
-##############################
-#                            #
-# 3RD PARTY LIBRARY SETTINGS #
-#                            #
-##############################
-
-# APM
-MIDDLEWARE = ["elasticapm.contrib.django.middleware.TracingMiddleware"] + MIDDLEWARE
-INSTALLED_APPS = INSTALLED_APPS + [
-    "elasticapm.contrib.django",
-]
 
 if SUBPATH and SUBPATH != "/":
     STATIC_URL = f"{SUBPATH}{STATIC_URL}"
