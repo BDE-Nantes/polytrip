@@ -11,7 +11,7 @@ os.environ.setdefault("CACHE_DEFAULT", "127.0.0.1:6379/2")
 
 from .base import *  # noqa isort:skip
 
-LANGUAGE_CODE = "en-us"
+LANGUAGE_CODE = "fr-FR"
 
 # Database performance
 for db_config in DATABASES.values():
