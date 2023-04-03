@@ -1,7 +1,7 @@
 -c base.txt
 
 # Dependencies only relevant for (unit) testing
-coverage==7.1.0
+coverage==7.2.1
 django-webtest==1.9.10
 factory-boy==3.2.1
 freezegun==1.2.2

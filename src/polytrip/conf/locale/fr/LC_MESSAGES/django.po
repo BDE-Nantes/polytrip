@@ -1,0 +1,180 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-02 18:35+0200\n"
+"PO-Revision-Date: 2023-04-02 18:43+0009\n"
+"Last-Translator:   <admin@example.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Translated-Using: django-rosetta 0.9.8\n"
+
+#: src/polytrip/accounts/admin.py:13
+msgid "Permissions"
+msgstr "Permissions"
+
+#: src/polytrip/accounts/admin.py:24
+msgid "Important dates"
+msgstr "Dates importantes"
+
+#: src/polytrip/accounts/models.py:10
+msgid "Is a team"
+msgstr "Est une équipe"
+
+#: src/polytrip/accounts/models.py:11
+msgid "Team name"
+msgstr "Nom d'équipe"
+
+#: src/polytrip/accounts/models.py:12 src/polytrip/schools/models.py:17
+#: src/polytrip/trips/admin.py:19
+msgid "School"
+msgstr "École"
+
+#: src/polytrip/accounts/models.py:18
+msgid "User can't be linked to a school if it is not a team."
+msgstr ""
+"L'utilisateur ne peut pas être lié à une école s'il n'est pas une équipe."
+
+#: src/polytrip/accounts/models.py:27
+msgid "A user that is a team must be linked to a school."
+msgstr "Un utilisateur qui est une équipe doit être lié à une école."
+
+#: src/polytrip/accounts/models.py:33
+msgid "A team name must be provided if the user is a team."
+msgstr "Un nom d'équipe doit être spécifié si l'utilisateur est une équipe."
+
+#: src/polytrip/schools/models.py:10 src/polytrip/trips/models.py:9
+#: src/polytrip/utils/models.py:15
+msgid "Uuid"
+msgstr "Uuid"
+
+#: src/polytrip/schools/models.py:10 src/polytrip/trips/models.py:9
+#: src/polytrip/utils/models.py:15
+msgid "Unique identifier (UUID4)"
+msgstr "Identifiant unique (UUID4)"
+
+#: src/polytrip/schools/models.py:11
+msgid "School name"
+msgstr "Nom de l'école"
+
+#: src/polytrip/schools/models.py:12
+msgid "School color"
+msgstr "Couleur de l'école"
+
+#: src/polytrip/schools/models.py:13
+msgid "School coordinates"
+msgstr "Coordonnées de l'école"
+
+#: src/polytrip/schools/models.py:18
+msgid "Schools"
+msgstr "Écoles"
+
+#: src/polytrip/siteconfig/models.py:17
+msgid "Start date"
+msgstr "Date de début"
+
+#: src/polytrip/siteconfig/models.py:17
+msgid "Start date of the Polytrip event"
+msgstr "Date de début de l'événement Polytrip"
+
+#: src/polytrip/siteconfig/models.py:20
+msgid "End date"
+msgstr "Date de fin"
+
+#: src/polytrip/siteconfig/models.py:20
+msgid "End date of the Polytrip event"
+msgstr "Date de fin de de l'événement Polytrip"
+
+#: src/polytrip/siteconfig/models.py:25
+msgid "Start date can't be after end date."
+msgstr "La date de début ne peut pas être après la date de fin."
+
+#: src/polytrip/siteconfig/models.py:34
+msgid "Site configuration"
+msgstr "Configuration du site"
+
+#: src/polytrip/templates/admin/base_site.html:5
+#: src/polytrip/templates/admin/base_site.html:18
+msgid "Administration"
+msgstr "Administration"
+
+#: src/polytrip/templates/admin/base_site.html:34
+msgid "View site"
+msgstr "Voir le site"
+
+#: src/polytrip/templates/admin/base_site.html:39
+msgid "Change password"
+msgstr "Changer de mot de passe"
+
+#: src/polytrip/templates/admin/base_site.html:41
+msgid "Log out"
+msgstr "Se déconnecter"
+
+#: src/polytrip/templates/samples/pager.html:8
+#: src/polytrip/templates/samples/pager.html:10
+msgid "Previous"
+msgstr "Précédent"
+
+#: src/polytrip/templates/samples/pager.html:16
+#: src/polytrip/templates/samples/pager.html:18
+msgid "Next"
+msgstr "Suivant"
+
+#: src/polytrip/trips/admin.py:23
+msgid "Distance (km)"
+msgstr "Distance (km)"
+
+#: src/polytrip/trips/models.py:11 src/polytrip/trips/models.py:19
+msgid "Trip"
+msgstr "Trajet"
+
+#: src/polytrip/trips/models.py:20
+msgid "Trips"
+msgstr "Trajets"
+
+#: src/polytrip/utils/management/commands/clear_cache.py:10
+msgid "Clear given cache only"
+msgstr "Nettoyer seulement le caché donné"
+
+#: src/polytrip/utils/models.py:8
+msgid "Published"
+msgstr "Publié"
+
+#: src/polytrip/utils/validators.py:23
+#, python-format
+msgid "Image must have a width of %(width)s and a height of %(height)s"
+msgstr ""
+"L'image doit avoir une largeur de %(width)s et une hauteur de %(height)s"
+
+#: src/polytrip/utils/validators.py:34
+#, python-format
+msgid ""
+"Ensure this file size is not greater than %(max_size)s. Your file size is "
+"%(size)s."
+msgstr ""
+"La taille du fichier ne doit pas dépasser %(max_size)s. Votre taille de "
+"fichier est de %(size)s."
+
+#: src/polytrip/utils/validators.py:35
+#, python-format
+msgid ""
+"Ensure this file size is not less than %(min_size)s. Your file size is "
+"%(size)s."
+msgstr ""
+"La taille du fichier ne doit pas être inférieure à %(min_size)s. Votre "
+"taille de fichier est de %(size)s."
+
+#: src/polytrip/utils/validators.py:36
+#, python-format
+msgid "Files of type %(content_type)s are not supported."
+msgstr "Les fichiers de type %(content_type)s ne sont pas supportés."

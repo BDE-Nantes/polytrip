@@ -1,0 +1,6 @@
+[submodule "polytrip-admin-front"]
+	path = polytrip-admin-front
+	url = https://github.com/BDE-Nantes/polytrip-admin-front
+[submodule "polytrip-front"]
+	path = polytrip-front
+	url = https://github.com/BDE-Nantes/polytrip-front
