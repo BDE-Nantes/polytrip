@@ -38,7 +38,7 @@ LOGGING["loggers"].update(
         "django": {"handlers": handlers, "level": "INFO", "propagate": True},
         "django.security.DisallowedHost": {
             "handlers": handlers,
-            "level": "CRITICAL",
+            "level": "INFO",
             "propagate": False,
         },
     }
@@ -49,6 +49,6 @@ LOGGING["loggers"].update(
 SECURE_CONTENT_TYPE_NOSNIFF = True  # Sets X-Content-Type-Options: nosniff
 
 
-if SUBPATH and SUBPATH != "/":
-    STATIC_URL = f"{SUBPATH}{STATIC_URL}"
-    MEDIA_URL = f"{SUBPATH}{MEDIA_URL}"
+# if SUBPATH and SUBPATH != "/":
+#     STATIC_URL = f"{SUBPATH}{STATIC_URL}"
+#     MEDIA_URL = f"{SUBPATH}{MEDIA_URL}"

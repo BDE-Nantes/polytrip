@@ -13,3 +13,5 @@ os.environ.setdefault("LOG_STDOUT", "yes")
 # os.environ.setdefault("ALLOWED_HOSTS", "*")
 
 from .production import *  # noqa isort:skip
+
+ALLOWED_HOSTS = ["*", "polytrip.bde-polytech-nantes.fr"]

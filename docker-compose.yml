@@ -17,6 +17,8 @@ services:
       - POLYTRIP_SUPERUSER_USERNAME=admin
       - POLYTRIP_SUPERUSER_PASSWORD=admin
       - POLYTRIP_SUPERUSER_EMAIL=admin@localhost
+      - DB_USER=${DB_USER:-polytrip}
+      - DB_PASSWORD=${DB_PASSWORD:-polytrip}
     ports:
       - 8000:8000
     depends_on:
