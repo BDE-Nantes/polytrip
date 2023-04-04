@@ -55,8 +55,8 @@ COPY ./bin/docker_start.sh /start.sh
 RUN mkdir /app/log /app/config
 
 COPY ./src /app/src
-COPY --from=frontend-build /app/front-admin/dist /app/src/polytrip/templates/front-admin
-COPY --from=frontend-build /app/front-public/dist /app/src/polytrip/templates/front-public
+COPY --from=frontend-build /app/front-admin/dist /app/src/polytrip/static/front-admin
+COPY --from=frontend-build /app/front-public/dist /app/src/polytrip/static/front-public
 
 RUN useradd -M -u 1000 user
 RUN chown -R user /app
