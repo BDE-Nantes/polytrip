@@ -18,7 +18,7 @@ for db_config in DATABASES.values():
     db_config["CONN_MAX_AGE"] = 60  # Lifetime of a database connection for performance.
 
 # Caching sessions.
-SESSION_ENGINE = "django.contrib.sessions.backends.cache"
+SESSION_ENGINE = "django.contrib.sessions.backends.db"
 SESSION_CACHE_ALIAS = "default"
 
 # Caching templates.

@@ -38,7 +38,7 @@ urlpatterns = [
     path("api/", include("polytrip.api.urls")),
     # Simply show the master template.
     path("", TemplateView.as_view(template_name="front_public.html"), name="front-public"),
-    path("userpanel", TemplateView.as_view(template_name="admin_front.html"), name="front-admin"),
+    path("userpanel", TemplateView.as_view(template_name="front_admin.html"), name="front-admin"),
 ]
 
 # NOTE: The staticfiles_urlpatterns also discovers static files (ie. no need to run collectstatic). Both the static
