@@ -9,7 +9,7 @@ from polytrip.schools.models import School
 class User(AbstractUser):
     is_team = models.BooleanField(_("Is a team"), default=False)
     team_name = models.CharField(_("Team name"), max_length=255, blank=True)
-    school = models.ForeignKey(School, verbose_name=_("School"), on_delete=models.SET_NULL, null=True)
+    school = models.ForeignKey(School, verbose_name=_("School"), on_delete=models.SET_NULL, null=True, blank=True)
 
     def clean(self):
         if not self.is_team and self.school is not None:
